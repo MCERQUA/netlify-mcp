@@ -1,0 +1,19 @@
+# Smithery configuration file: https://smithery.ai/docs/build/project-config
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - accessToken
+    properties:
+      accessToken:
+        type: string
+        description: Netlify Personal Access Token
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'node', args: ['build/index.js'], env: { NETLIFY_ACCESS_TOKEN: config.accessToken } })
+  exampleConfig:
+    accessToken: your_netlify_access_token_here
