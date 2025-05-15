@@ -1,4 +1,5 @@
 # Netlify MCP Server
+[![smithery badge](https://smithery.ai/badge/@MCERQUA/netlify-mcp)](https://smithery.ai/server/@MCERQUA/netlify-mcp)
 
 A Model Context Protocol (MCP) server for managing Netlify sites. This server enables seamless integration with Netlify's API through MCP, allowing you to create, manage, and deploy sites directly from your MCP-enabled environment.
 
@@ -11,6 +12,15 @@ A Model Context Protocol (MCP) server for managing Netlify sites. This server en
 
 ## Installation
 
+### Installing via Smithery
+
+To install Netlify Site Manager for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@MCERQUA/netlify-mcp):
+
+```bash
+npx -y @smithery/cli install @MCERQUA/netlify-mcp --client claude
+```
+
+### Manual Installation
 1. Clone this repository:
 ```bash
 git clone https://github.com/MCERQUA/netlify-mcp.git
