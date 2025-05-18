@@ -2,6 +2,10 @@
 
 A Model Context Protocol (MCP) server for managing Netlify sites. This server enables seamless integration with Netlify's API through MCP, allowing you to create, manage, and deploy sites directly from your MCP-enabled environment.
 
+<a href="https://glama.ai/mcp/servers/@MCERQUA/netlify-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@MCERQUA/netlify-mcp/badge" alt="Netlify Server MCP server" />
+</a>
+
 ## Features
 
 - Create new sites from GitHub repositories
