@@ -1,0 +1,27 @@
+# Smithery Configuration for Netlify MCP Server
+name: netlify-mcp
+description: MCP server for managing Netlify sites
+version: 1.0.1
+author: MCERQUA
+
+server:
+  command: node
+  args:
+    - build/index.js
+  env:
+    NODE_ENV: production
+
+build:
+  dockerfile: Dockerfile
+
+required_env:
+  - NETLIFY_ACCESS_TOKEN
+
+capabilities:
+  - tools
+
+tags:
+  - netlify
+  - deployment
+  - mcp
+  - ci-cd
